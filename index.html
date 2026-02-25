@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ICF SL Technical Proposal RFP SL 0006</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;} 
+body{font-family:Oswald,Arial,sans-serif;background:#f0f3f8;display:flex;flex-direction:column;align-items:center;padding:30px 0;}
+.a4{width:794px;height:1123px;background:#ffffff;box-shadow:0 4px 24px rgba(0,0,0,.18);display:flex;flex-direction:column;position:relative;overflow:hidden;margin-bottom:24px;}
+.lh-head{background:#004080;color:#fff;padding:22px 30px;text-align:center;}
+.lh-head img{width:120px;border-radius:8px;}
+.lh-head h3{margin:10px 0 4px;font-size:13px;font-weight:500;}
+.lh-head p{margin:0;font-size:10px;}
+.body-wrap{padding:8px;background:#ffffff;flex:1;display:flex;flex-direction:column;}
+.b4{border:4px solid #004080;border-radius:14px;padding:5px;flex:1;display:flex;flex-direction:column;}
+.b3{border:3px solid #0066cc;border-radius:12px;padding:5px;flex:1;display:flex;flex-direction:column;}
+.b2{border:2px solid #007bff;border-radius:10px;padding:5px;flex:1;display:flex;flex-direction:column;}
+.b1{background:#fff;border:1px solid #004080;border-radius:8px;flex:1;display:flex;flex-direction:column;padding:20px 30px;}
+.page-content{flex:1;font-size:14.5px;line-height:1.72;color:#333;overflow-y:auto;}
+.page-content h2{font-size:17px;font-weight:700;color:#004080;border-bottom:3px solid #0066cc;padding-bottom:4px;}
+.page-content a{color:#004080;}
+.lh-foot{background:#004080;color:#fff;padding:12px 30px;text-align:center;font-size:11.5px;flex-shrink:0;}
+.page-num{position:absolute;bottom:38px;right:12px;font-size:9px;color:rgba(255,255,255,.55);}
+.sig-block{padding:20px 30px;border-top:2px solid #004080;display:flex;justify-content:flex-start;align-items:center;min-height:100px;}
+.sig-email{font-size:11px;color:#555;margin-top:2px;}
+.signature-date{font-size:11px;color:#555;margin-top:4px;}
+.sig-name{font-size:15px;font-weight:600;color:#004080;}
+.sig-role{font-size:11px;}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
+th{background:#004080;color:#fff;padding:6px;border:1px solid #2d4b7a;}
+td{padding:5px;border:1px solid #bdd3e8;}
+.personnel-row{border-left:4px solid #0066cc;padding:8px 12px;margin:12px 0;background:#ffffff;}
+.cv-line{margin-top:4px;word-break:break-all;}
+.contact-info{margin-top:4px;font-size:13px;}
+.personnel-compact .personnel-row{padding:5px 10px;margin:5px 0;font-size:12.5px;line-height:1.45;}
+.personnel-compact .cv-line{margin-top:2px;font-size:12px;}
+.company-overview{background:#ffffff;border-left:5px solid #004080;padding:18px 22px;margin:20px 0;border-radius:0 8px 8px 0;}
+.stats-mini{display:flex;gap:25px;margin:15px 0;flex-wrap:wrap;}
+.stat-num{font-size:22px;font-weight:700;color:#004080;}
+.stat-label{font-size:11px;text-transform:uppercase;color:#555;}
+.expertise-tags{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0;}
+.expertise-tag{background:white;border:1px solid #004080;border-radius:30px;padding:4px 14px;font-size:12px;color:#004080;font-weight:500;}
+@media print{
+  body{background:#fff;padding:0;}
+  .a4{width:210mm;height:297mm;box-shadow:none;margin:0;page-break-after:always;}
+  @page{size:A4;margin:0;}
+}
+</style>
+</head>
+<body>
+<div class="a4">
+    <div class="lh-head">
+      <img src="https://raw.githubusercontent.com/mohamedsillahkanu/gdp-dashboard-2/6c7463b0d5c3be150aafae695a4bcbbd8aeb1499/ICF-SL.jpg" alt="ICF SL Logo" onerror="this.style.display='none'">
+      <h3>Informatics Consultancy Firm (ICF SL)</h3>
+      <p><em>Advancing Data Driven Solutions for Health and Development</em></p>
+    </div>
+    <div class="body-wrap">
+      <div class="b4"><div class="b3"><div class="b2">
+        <div class="b1">
+          <div class="page-content" contenteditable="true">
+    <p> </p>
+    <p>To:<br>
+    <strong>Kevin Opondo,</strong><br>
+    PMI Evolve Sierra Leone Project<br>
+    Abt Associates Inc.,<br>
+    No 8 Spur Road, Freetown</p>
+    <p>24th February 2026</p>
+    <p><br></p>
+    <p style="font-size:20px;font-weight:700;color:#004080;text-align:center;margin:20px 0;">TECHNICAL PROPOSAL</p>
+    <p style="font-size:16px;font-weight:500;color:#0066cc;text-align:center;margin-bottom:20px;">Data Collection for School Based Distribution of ITNs in Sierra Leone</p>
+    <p style="font-size:14px;text-align:center;margin-bottom:30px;"><strong>RFP No: SL 0006</strong></p>
+    <p>Dear Sir,</p>
+    <p>Informatics Consultancy Firm Sierra Leone (ICF SL) is pleased to submit this technical proposal in response to RFP SL 0006. This proposal remains valid for a minimum of sixty (60) days and contains no pricing information. ICF SL certifies that it is not on the OFAC SDN list and accepts all Terms and Conditions of Attachment C.</p>
+    <p>Leveraging our proprietary <strong>ICF Collect version 2</strong> platform which is a web-based solution developed entirely by ICF-SL using modern technologies (React, Node.js, PostgreSQL, HTML5, CSS, Java Sript and Python). We offer a complete solution for the April 2026 school based ITN distribution in Koinadugu, Port Loko, Pujehun and Bonthe. ICF Collect v2 features an embedded dashboard, secure data download access, and offline first architecture, designed for easy installation and use.</p>
+    <p><br></p>
+    <p>Respectfully,</p>
+    <p style="margin-top:20px;"><br></p>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+      <div><strong>Mohamed Sillah Kanu</strong><br>CEO/Digitalization Lead Specialist</div>
+      <div style="text-align:right;"><br></div>
+    </div>
+  </div>
+          
+        </div>
+      </div></div></div>
+    </div>
+    <div class="lh-foot">
+      <p>Medical Stores Compound, Freetown, Sierra Leone</p>
+      <p class="copy">© 2025 Informatics Consultancy Firm Sierra Leone (ICF SL)</p>
+    </div>
+    <div class="page-num">Page 1</div>
+  </div>
+<div class="a4">
+    <div class="lh-head">
+      <img src="https://raw.githubusercontent.com/mohamedsillahkanu/gdp-dashboard-2/6c7463b0d5c3be150aafae695a4bcbbd8aeb1499/ICF-SL.jpg" alt="ICF SL Logo" onerror="this.style.display='none'">
+      <h3>Informatics Consultancy Firm (ICF SL)</h3>
+      <p><em>Advancing Data Driven Solutions for Health and Development</em></p>
+    </div>
+    <div class="body-wrap">
+      <div class="b4"><div class="b3"><div class="b2">
+        <div class="b1">
+          <div class="page-content" contenteditable="true">
+    <h2>About Informatics Consultancy Firm Sierra Leone (ICF SL)</h2>
+    
+    <div class="company-overview">
+      <p style="font-size:15px; margin-bottom:12px;"><strong>INFORMATICS CONSULTANCY FIRM SIERRA LEONE (ICF-SL)</strong>, established in 2023, is a health informatics company duly registered and operating in the Republic of Sierra Leone, specializing in health information systems, data analytics, malaria surveillance, and digital health solutions, with its principal office located in Freetown, Sierra Leone.</p>
+      
+      <p>ICF-SL possesses specialized expertise in health informatics, DHIS2 implementation, malaria epidemiology, data science, and the development of digital health solutions tailored to the needs of National Malaria Programmes and other health sector stakeholders.</p>
+      
+      <p>Since our establishment in 2023, ICF SL has successfully delivered critical technical assistance to the National Malaria Control Programme (NMCP), including digital tools for the 2023 ITN mass campaign and the Kono school based pilot, also implemented the School Based Distribution for PMI Evolve in 2025 demonstrating proven capability and establishing a foundation of trust and collaboration. Our multidisciplinary team of statisticians, data scientists, epidemiologists, and software engineers delivers cutting edge solutions that drive evidence based decision making across Sierra Leone.</p>
+    </div>
+
+    <div class="stats-mini">
+      <div class="stat-item"><span class="stat-num">30+</span> <span class="stat-label">Staff</span></div>
+      <div class="stat-item"><span class="stat-num">3+</span> <span class="stat-label">Projects</span></div>
+      <div class="stat-item"><span class="stat-num">2+</span> <span class="stat-label">Years</span></div>
+      <div class="stat-item"><span class="stat-num">60</span> <span class="stat-label">Tools Built</span></div>
+    </div>
+
+    <h3>Core Competencies</h3>
+    <div class="expertise-tags">
+      <span class="expertise-tag">Health Informatics</span>
+      <span class="expertise-tag">DHIS2 Implementation</span>
+      <span class="expertise-tag">Malaria Surveillance</span>
+      <span class="expertise-tag">Data Science</span>
+      <span class="expertise-tag">Machine Learning</span>
+      <span class="expertise-tag">Geospatial Analysis</span>
+      <span class="expertise-tag">Digital Health Solutions</span>
+      <span class="expertise-tag">Training and Capacity Building</span>
+    </div>
+
+    <p>ICF SL is proud to have developed <strong>ICF Collect v2</strong>, a proprietary web based platform that has been successfully deployed for health campaigns. The platform is easy to install, configure, and maintain, with full documentation and training provided to partners.</p>
+  </div>
+          
+        </div>
+      </div></div></div>
+    </div>
+    <div class="lh-foot">
+      <p>Medical Stores Compound, Freetown, Sierra Leone</p>
+      <p class="copy">© 2025 Informatics Consultancy Firm Sierra Leone (ICF SL)</p>
+    </div>
+    <div class="page-num">Page 2</div>
+  </div>
+<div class="a4">
+    <div class="lh-head">
+      <img src="https://raw.githubusercontent.com/mohamedsillahkanu/gdp-dashboard-2/6c7463b0d5c3be150aafae695a4bcbbd8aeb1499/ICF-SL.jpg" alt="ICF SL Logo" onerror="this.style.display='none'">
+      <h3>Informatics Consultancy Firm (ICF SL)</h3>
+      <p><em>Advancing Data Driven Solutions for Health and Development</em></p>
+    </div>
+    <div class="body-wrap">
+      <div class="b4"><div class="b3"><div class="b2">
+        <div class="b1">
+          <div class="page-content personnel-compact" contenteditable="true">
+    <h2>1. Key Personnel and Technical Contacts (RFP Part 1 Section III.C.1)</h2>
+    <p><em>Curriculum Vitae attached separately</em></p>
+
+    <div class="personnel-row">
+      <strong>Mohamed Sillah Kanu</strong> — Digitalization Lead / Data Systems<br>
+      MSc Data Science, MSc Statistics; 5+ years experience in mobile data collection and digital health architecture. Lead for 2023 NMCP ITN campaign digital tools.<br>
+      <span class="cv-line">CV: <a href="https://mohamedsillahkanu.github.io/cv/" target="_blank">https://mohamedsillahkanu.github.io/cv/</a></span>
+    </div>
+
+    <div class="personnel-row">
+      <strong>Ishiaka Sheriff</strong> — Mobile Data Collection Developer<br>
+      BSc IT, certified developer; 2+ years experience building offline forms and QR integrations.<br>
+      <span class="cv-line">CV: <a href="https://isiakamass.github.io/ishakamyresume/" target="_blank">https://isiakamass.github.io/ishakamyresume/</a></span>
+    </div>
+
+    <div class="personnel-row">
+      <strong>Isha Sheriff</strong> — Finance Officer<br>
+      BSc Accounting, ACA qualified; 4+ years experience in project financial management and donor compliance.
+    </div>
+
+    <div class="personnel-row">
+      <strong>Randwulf A.J. Tucker</strong> — Backend and Database Engineer<br>
+      BSc Information Systems; expert in PostgreSQL, API integration, server security.<br>
+      <span class="cv-line">CV: <a href="https://shieldwulf.github.io/Resume/" target="_blank">https://shieldwulf.github.io/Resume/</a></span>
+    </div>
+
+    <div class="personnel-row">
+      <strong>Alusine Mansaray</strong> — DevOps Engineer<br>
+      BSc Computer Science; 3+ years experience in cloud infrastructure, CI/CD, and system automation.<br>
+      <span class="cv-line">CV: <a href="https://alusinemansaray56454-hub.github.io/My-Resume-Alusine-Mansaray/" target="_blank">https://alusinemansaray56454-hub.github.io/My-Resume-Alusine-Mansaray/</a></span>
+    </div>
+
+    <div class="personnel-row">
+      <strong>Morlai Alimamy Kargbo</strong> — Software Engineer (Dashboard and Embed)<br>
+      BSc Software Engineering; lead developer of ICF Collect v2 embedded dashboard.<br>
+      <span class="cv-line">CV: <a href="https://morlai.github.io/Resume-MAK/" target="_blank">https://morlai.github.io/Resume-MAK/</a></span>
+    </div>
+
+    <div class="personnel-row">
+      <strong>Lucy Henrietta Kawa</strong> — Software Engineer (Mobile and Frontend)<br>
+      BSc Computer Science; 3 years mobile UI; ICF Collect v2 form designer.<br>
+      <span class="cv-line">CV: <a href="https://lucy-tech-ui.github.io/My-Resume-Lucy/" target="_blank">https://lucy-tech-ui.github.io/My-Resume-Lucy/</a></span>
+    </div>
+
+    <div class="personnel-row">
+      <strong>Zainab Kamara</strong> — User Support and Training Coordinator<br>
+      BSc Statistics; experienced in cascade training and helpdesk during live campaigns.<br>
+      <span class="cv-line">CV: <a href="https://xynabkamara111-ops.github.io/Zanab-s-Resume/" target="_blank">https://xynabkamara111-ops.github.io/Zanab-s-Resume/</a></span>
+    </div>
+
+    <p><strong>Technical points of contact:</strong> Mohamed Sillah Kanu and Lucy Henrietta Kawa.</p>
+  </div>
+          
+        </div>
+      </div></div></div>
+    </div>
+    <div class="lh-foot">
+      <p>Medical Stores Compound, Freetown, Sierra Leone</p>
+      <p class="copy">© 2025 Informatics Consultancy Firm Sierra Leone (ICF SL)</p>
+    </div>
+    <div class="page-num">Page 3</div>
+  </div>
+<div class="a4">
+    <div class="lh-head">
+      <img src="https://raw.githubusercontent.com/mohamedsillahkanu/gdp-dashboard-2/6c7463b0d5c3be150aafae695a4bcbbd8aeb1499/ICF-SL.jpg" alt="ICF SL Logo" onerror="this.style.display='none'">
+      <h3>Informatics Consultancy Firm (ICF SL)</h3>
+      <p><em>Advancing Data Driven Solutions for Health and Development</em></p>
+    </div>
+    <div class="body-wrap">
+      <div class="b4"><div class="b3"><div class="b2">
+        <div class="b1">
+          <div class="page-content" contenteditable="true">
+    <h2>2. Program Management Approach (RFP Part 1 Section III.C.2)</h2>
+    <p>ICF SL will operate a dedicated <strong>ICF Collect v2 Delivery Team</strong> with clear Level of Effort (LOE) as summarized below. Weekly progress meetings, shared Jira/Notion, and direct email/Slack communication with Abt/PMI ensure transparency and alignment.</p>
+    
+    <h3>Management Structure and Level of Effort (LOE)</h3>
+    <table>
+      <tbody><tr><th>Role</th><th>Name</th><th>LOE (days)</th><th>Key Responsibilities</th></tr>
+      <tr><td>Digitalization Lead</td><td>Mohamed S. Kanu</td><td>30</td><td>Overall delivery, client liaison, technical oversight</td></tr>
+      <tr><td>Software Engineer (dashboard)</td><td>Morlai A. Kargbo</td><td>30</td><td>Embedded dashboard, data download portal</td></tr>
+      <tr><td>Software Engineer (mobile)</td><td>Lucy H. Kawa</td><td>30</td><td>ICF Collect v2 form customization, QR integration</td></tr>
+      <tr><td>Software Engineer / Voucher Designer</td><td>Theodore Seasy</td><td>25</td><td>Voucher design, frontend development, UI/UX</td></tr>
+      <tr><td>DevOps Engineer</td><td>Alusine Mansay</td><td>20</td><td>Cloud infrastructure, CI/CD, system monitoring</td></tr>
+      <tr><td>Mobile Specialist</td><td>Ishaka Sheriff</td><td>30</td><td>Device configuration, offline sync, user credentials</td></tr>
+      <tr><td>Backend Engineer</td><td>Randwulf Tucker</td><td>30</td><td>Database, server, API, security</td></tr>
+      <tr><td>Finance Officer</td><td>Isha Sheriff</td><td>15</td><td>Budget tracking, financial compliance, reporting</td></tr>
+      <tr><td>Policy Advisor / HR</td><td>Ramatulai Jalloh</td><td>15</td><td>Stakeholder engagement, policy compliance, HR coordination</td></tr>
+      <tr><td>Training and Support</td><td>Zainab Kamara</td><td>30</td><td>User training, manuals, field helpdesk</td></tr>
+    </tbody></table>
+    <p><strong>Internal review meetings:</strong> Daily stand up (8:30‑8:45) and weekly progress review (Wednesdays) to review results, address technical issues, and plan activities jointly with Abt/PMI when required. LOE includes buffer for campaign troubleshooting.</p>
+    <p>Key personnel change protocol: written notification to Abt within 5 working days with substitution plan and CV.</p>
+  </div>
+          
+        </div>
+      </div></div></div>
+    </div>
+    <div class="lh-foot">
+      <p>Medical Stores Compound, Freetown, Sierra Leone</p>
+      <p class="copy">© 2025 Informatics Consultancy Firm Sierra Leone (ICF SL)</p>
+    </div>
+    <div class="page-num">Page 4</div>
+  </div>
+<div class="a4">
+    <div class="lh-head">
+      <img src="https://raw.githubusercontent.com/mohamedsillahkanu/gdp-dashboard-2/6c7463b0d5c3be150aafae695a4bcbbd8aeb1499/ICF-SL.jpg" alt="ICF SL Logo" onerror="this.style.display='none'">
+      <h3>Informatics Consultancy Firm (ICF SL)</h3>
+      <p><em>Advancing Data Driven Solutions for Health and Development</em></p>
+    </div>
+    <div class="body-wrap">
+      <div class="b4"><div class="b3"><div class="b2">
+        <div class="b1">
+          <div class="page-content" contenteditable="true">
+    <h2>3. Proposed Methods and Data Management (RFP Part 1 Section III.C.3)</h2>
+    <p><strong>ICF Collect version 2</strong> is a web based platform developed entirely by ICF SL using modern technologies (React, Node.js, PostgreSQL, HTML5, CSS, Java Sript and Python). It is designed for easy installation, configuration, and use, requiring no proprietary hardware or complex setup. The platform directly addresses the Scope of Work requirements.</p>
+    
+    <h3>Data Collection and Management Application Development</h3>
+    <ul>
+      <li><strong>Adaptation of existing tools:</strong> We will adapt NMCP aligned forms used in 2023 to capture registration/enrollment and distribution data, incorporating feedback from PMI Evolve and NMCP.</li>
+      <li><strong>Back end setup:</strong> Configuration of geography, pre loaded school enrollment data, and QR code generation for rapid data population.</li>
+      <li><strong>User accounts and dashboards:</strong> Creation of all necessary user credentials and adaptation of the ICF Collect v2 dashboard to summarize key ITN indicators.</li>
+      <li><strong>Server provision:</strong> Secure cloud server (DigitalOcean, PostgreSQL, Google Cloud Platform) to store all raw data throughout distribution, cleaning, and until final approval.</li>
+    </ul>
+    
+    <h3>Training</h3>
+    <ul>
+      <li>Configure NMCP provided mobile devices (downloading ICF Collect app, settings) prior to trainings.</li>
+      <li>Provide thorough training to PMI Evolve and NMCP teams on data collection and analysis tools.</li>
+      <li>Update training manuals and PowerPoint presentations; support cascade training to end users.</li>
+    </ul>
+    
+    <h3>Implementation and Post Campaign Support</h3>
+    <ul>
+      <li><strong>Troubleshooting:</strong> 24/7 technical support during distribution for data collection, syncing, and analytics issues.</li>
+      <li><strong>Post campaign:</strong> Data cleaning, verification, final raw data export, and dashboard finalization. Formal server spin down notification after data approval.</li>
+    </ul>
+  </div>
+          
+        </div>
+      </div></div></div>
+    </div>
+    <div class="lh-foot">
+      <p>Medical Stores Compound, Freetown, Sierra Leone</p>
+      <p class="copy">© 2025 Informatics Consultancy Firm Sierra Leone (ICF SL)</p>
+    </div>
+    <div class="page-num">Page 5</div>
+  </div>
+<div class="a4">
+    <div class="lh-head">
+      <img src="https://raw.githubusercontent.com/mohamedsillahkanu/gdp-dashboard-2/6c7463b0d5c3be150aafae695a4bcbbd8aeb1499/ICF-SL.jpg" alt="ICF SL Logo" onerror="this.style.display='none'">
+      <h3>Informatics Consultancy Firm (ICF SL)</h3>
+      <p><em>Advancing Data Driven Solutions for Health and Development</em></p>
+    </div>
+    <div class="body-wrap">
+      <div class="b4"><div class="b3"><div class="b2">
+        <div class="b1">
+          <div class="page-content" contenteditable="true">
+    <h2>4. Communication and Collaboration (RFP Part 1 Section III.C.4)</h2>
+    <ul>
+      <li><strong>Weekly progress meetings:</strong> Thursdays 15:00 Freetown time with Abt/PMI Evolve – milestone tracking, risks, and results review.</li>
+      <li><strong>Daily check in during implementation (April 20-24):</strong> 08:30 and 17:30 summary via email.</li>
+      <li><strong>Shared workspace:</strong> Notion with deliverable tracker, meeting minutes, version control, accessible to Abt team.</li>
+      <li><strong>Emergency technical hotline:</strong>&nbsp;099725620&nbsp;and 076114224&nbsp;– 24/7 during distribution.</li>
+      <li><strong>Data finalization meeting:</strong> Formal review meeting to confirm completion of data cleaning and analysis.</li>
+    </ul>
+
+    <h3>Deliverable by Deliverable Response (RFP p.13, Attachment A)</h3>
+    <table>
+      <tbody><tr><th>Deliverable (RFP Ref)</th><th>Submission Date</th><th>ICF SL Approach</th></tr>
+      <tr><td>1. Outline of App development and data collection plan</td><td>11 March 2026</td><td>Detailed project plan with Gantt, form specifications, testing schedule.</td></tr>
+      <tr><td>2. Prototype data collection tool</td><td>30 March 2026</td><td>Fully functional ICF Collect v2 forms for enrollment, logistics, supervision.</td></tr>
+      <tr><td>3. Prototype embedded dashboard</td><td>30 March 2026</td><td>Interactive dashboard with mock indicators; data download portal prototype.</td></tr>
+      <tr><td>4. Final/approved data collection tool</td><td>9 April 2026</td><td>Incorporate feedback; final forms with QR codes, user credentials.</td></tr>
+      <tr><td>5. Final/approved dashboard</td><td>9 April 2026</td><td>Live dashboard with real data connection; download portal active.</td></tr>
+      <tr><td>6. Printed QR codes</td><td>9 April 2026</td><td>QR codes for all target schools, pre loaded with enrollment data.</td></tr>
+      <tr><td>7. User credentials</td><td>9 April 2026</td><td>Credentials for all end users (enumerators, supervisors, NMCP, Abt).</td></tr>
+      <tr><td>8. User manual / PPT</td><td>9 April 2026</td><td>Comprehensive illustrated manual and training presentation.</td></tr>
+      <tr><td>9. Full raw data export + final dashboard</td><td>7 May 2026</td><td>Cleaned dataset (CSV, Excel) and finalised dashboard with documentation.</td></tr>
+    </tbody></table>
+  </div>
+          
+        </div>
+      </div></div></div>
+    </div>
+    <div class="lh-foot">
+      <p>Medical Stores Compound, Freetown, Sierra Leone</p>
+      <p class="copy">© 2025 Informatics Consultancy Firm Sierra Leone (ICF SL)</p>
+    </div>
+    <div class="page-num">Page 6</div>
+  </div>
+<div class="a4">
+    <div class="lh-head">
+      <img src="https://raw.githubusercontent.com/mohamedsillahkanu/gdp-dashboard-2/6c7463b0d5c3be150aafae695a4bcbbd8aeb1499/ICF-SL.jpg" alt="ICF SL Logo" onerror="this.style.display='none'">
+      <h3>Informatics Consultancy Firm (ICF SL)</h3>
+      <p><em>Advancing Data Driven Solutions for Health and Development</em></p>
+    </div>
+    <div class="body-wrap">
+      <div class="b4"><div class="b3"><div class="b2">
+        <div class="b1">
+          <div class="page-content" contenteditable="true">
+    <h2>Activity Schedule and Commitment (RFP pp.12-13)</h2>
+    <p><strong>Key milestones (aligned with RFP):</strong></p>
+    <ul>
+      <li>Week of 9 Mar: receive final forms → 11 Mar outline plan.</li>
+      <li>Week of 16‑23 Mar: prototype development + testing feedback.</li>
+      <li>Week of 30 Mar: final tools, QR codes, credentials ready.</li>
+      <li>9 Apr: training materials delivered.</li>
+      <li>20‑24 Apr: live troubleshooting (on site and remote).</li>
+      <li>7 May: final dataset and dashboard handover.</li>
+    </ul>
+    <p>We acknowledge the 10% forfeiture clause for late delivery and have built internal buffers to guarantee on time submission. ICF SL certifies that it is not on the OFAC SDN list, accepts all flow down clauses (Attachment C), and is eligible to participate. This proposal is valid for 60 days from 27 February 2026.</p>
+    <p>We confirm that no pricing information is included in this technical volume, and we have addressed each of the four required sections within the 4‑page limit (Sections 1-4 presented on pages 3-6). CVs are attached separately and do not count toward the page limit.</p>
+    <p style="margin-top:30px; font-weight:500; color:#004080; text-align:center;">Thank you for considering ICF SL. We look forward to the opportunity to partner with PMI Evolve and Abt Associates on this critical malaria prevention initiative.</p>
+  </div>
+          
+    <div class="sig-block">
+      <div class="sig-details">
+        <div class="sig-name">Mohamed Sillah Kanu</div>
+        <div class="sig-role">Chief Executive Officer</div>
+        <div style="font-size:11px;color:#0066cc;">Informatics Consultancy Firm (ICF SL)</div>
+        <div style="font-size:11px;color:#555;margin-top:2px;"><a href="tel:+12408896759">Tel: +1 240 889 6759</a></div>
+        <div class="sig-email"><a href="mailto:mohamed.kanu@informaticsconsultancyfirm.com">mohamed.kanu@informaticsconsultancyfirm.com</a></div>
+        <div class="signature-date">Date: 27 February 2026</div>
+      </div>
+    </div>
+        </div>
+      </div></div></div>
+    </div>
+    <div class="lh-foot">
+      <p>Medical Stores Compound, Freetown, Sierra Leone</p>
+      <p style="font-size:9.5px;opacity:.8;">© 2025 Informatics Consultancy Firm Sierra Leone (ICF SL)</p>
+    </div>
+    <div class="page-num">Page 7</div>
+  </div>
+</body>
+</html>
